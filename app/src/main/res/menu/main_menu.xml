@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:title="Create group"
+        android:id="@+id/createGroupOption"
+        android:visible="false"/>
+
+    <item
+        android:title="Logout"
+        app:showAsAction="never"
+        android:id="@+id/logoutOption"/>
+
+    <item
+        app:showAsAction="always"
+        android:title="Profile"
+        android:id="@+id/profileOption"
+        android:icon="@drawable/user_profile_icon"/>
+
+    <item
+        app:showAsAction="always"
+        android:title="Show Chat"
+        android:id="@+id/showChatOption"
+        android:icon="@drawable/icon_chat"/>
+
+</menu>

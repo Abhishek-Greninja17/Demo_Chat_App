@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/addAdminToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#18A221"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="User Name"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"/>
+
+            <EditText
+                android:id="@+id/inputAdminName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="enter name of the user"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Company Name"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"/>
+
+            <EditText
+                android:id="@+id/inputCompanyName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="enter name of the company"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Type"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"/>
+
+            <RadioGroup
+                android:id="@+id/rg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/adminRadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Admin"/>
+
+                <RadioButton
+                    android:id="@+id/EmployeeRadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Employee"/>
+
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="E-mail id"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"/>
+
+            <EditText
+                android:id="@+id/inputAdminEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="enter the email of user"
+                android:inputType="textEmailAddress"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Password"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"/>
+
+            <EditText
+                android:id="@+id/inputAdminPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="enter the user password"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:id="@+id/addAdminButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add User"
+                android:textAllCaps="false"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="#18A221"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

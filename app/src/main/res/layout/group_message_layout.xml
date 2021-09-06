@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/group_receiver_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/sender_message_layout"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="50dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/group_receiver_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Sender Name"
+            android:textColor="#610404"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/group_receiver_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Messages"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/group_receiver_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:padding="5dp"
+            android:text="Time"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/group_sender_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/reciever_message_layout"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="50dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/group_sender_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Messages"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/group_sender_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:padding="5dp"
+            android:text="Time"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/group_receiver_image_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/reciever_message_layout"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/group_receiver_image_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Sender Name"
+            android:textColor="#610404"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/group_receiver_image"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/group_receiver_image_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:padding="5dp"
+            android:text="Time"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/group_sender_image_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/sender_message_layout"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/group_sender_image"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/group_sender_image_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:padding="5dp"
+            android:text="Time"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/group_receiver_audio_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/sender_message_layout"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/group_audio_receiver_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Sender Name"
+            android:textColor="#610404"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/group_audio_receiver"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:text="Audio"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:background="#DC090909"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:padding="2dp"
+            app:drawableRightCompat="@drawable/download_icon" />
+
+        <TextView
+            android:id="@+id/group_audio_receiver_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:padding="5dp"
+            android:text="Time"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/group_audio_sender_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/reciever_message_layout"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/group_audio_sender"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:text="Audio"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:background="#DC090909"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:padding="2dp"
+            app:drawableRightCompat="@drawable/download_icon" />
+
+        <TextView
+            android:id="@+id/group_audio_sender_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:padding="5dp"
+            android:text="Time"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/group_receiver_video_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/sender_message_layout"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/group_video_receiver_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Sender Name"
+            android:textColor="#610404"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <VideoView
+            android:id="@+id/group_video_receiver"
+            android:layout_width="180dp"
+            android:layout_height="100dp"
+            android:padding="2dp" />
+
+        <TextView
+            android:id="@+id/group_video_receiver_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:padding="5dp"
+            android:text="Time"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/group_video_sender_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/reciever_message_layout"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:visibility="gone">
+
+        <VideoView
+            android:id="@+id/group_video_sender"
+            android:layout_width="180dp"
+            android:layout_height="100dp"
+            android:padding="2dp" />
+
+        <TextView
+            android:id="@+id/group_video_sender_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:padding="5dp"
+            android:text="Time"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

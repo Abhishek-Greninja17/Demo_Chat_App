@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:state_pressed="true"><shape>
+    <gradient android:startColor="@color/greenlight"
+        android:centerColor="@color/cyan"
+        android:endColor="@color/marine"
+        android:angle="45"/>
+    <corners android:topLeftRadius="45dp"
+        android:bottomRightRadius="45dp"
+        android:topRightRadius="45dp"
+        android:bottomLeftRadius="45dp"/>
+    <stroke android:color="@color/colorPrimary" android:width="2dp"/>
+</shape>
+</item>
+    <item android:state_pressed="false"><shape>
+        <solid android:color="@color/login_details_transparency"/>
+        <corners android:topLeftRadius="45dp"
+            android:bottomRightRadius="45dp"
+            android:topRightRadius="45dp"
+            android:bottomLeftRadius="45dp"/>
+        <stroke android:color="@color/colorPrimary" android:width="2dp"/>
+    </shape>
+    </item>
+
+</selector>

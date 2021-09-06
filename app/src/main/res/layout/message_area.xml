@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="3"
+    android:background="#C3F5EE"
+    android:orientation="horizontal">
+
+    <EditText
+        android:id="@+id/input_chat_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:hint="Write a message"
+        android:textColor="#000"
+        android:layout_marginLeft="5dp"
+        android:layout_weight="2.5"
+        android:textColorHint="#000" />
+
+    <ImageView
+        android:id="@+id/select_chat_attachment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="0.2"
+        app:srcCompat="@drawable/attachment"
+        tools:ignore="VectorDrawableCompat" />
+
+<!--    <ImageView-->
+<!--        android:id="@+id/send_voice_button"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="center_vertical"-->
+<!--        android:layout_weight="0.2"-->
+<!--        android:src="@drawable/ic_record" />-->
+    <ImageView
+        android:id="@+id/send_message_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="0.2"
+        android:src="@drawable/icon_send" />
+
+</LinearLayout>
+
+
+

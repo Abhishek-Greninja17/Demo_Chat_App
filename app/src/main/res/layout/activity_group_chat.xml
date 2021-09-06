@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context=".GroupChatActivity">
+
+    <LinearLayout
+        android:id="@+id/l1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#18A221"
+        android:orientation="horizontal"
+        android:padding="2dp"
+        android:weightSum="5">
+
+        <ImageView
+            android:id="@+id/close_group_chat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/icon_arrow_back" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/group_chat_logo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/profile" />
+
+        <TextView
+            android:id="@+id/group_chat_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="4.5"
+            android:text="Group Name"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:layout_gravity="center_vertical"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/delete_all_group_chat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="5dp"
+            android:layout_weight="0.5"
+            android:src="@drawable/icon_delete_forever" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="20"
+        android:background="#C3F5EE">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/group_chat_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp" />
+
+    </ScrollView>
+
+    <include
+        android:id="@+id/i1"
+        layout="@layout/message_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="bottom" />
+
+</LinearLayout>

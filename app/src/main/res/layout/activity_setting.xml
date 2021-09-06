@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/settingToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#18A221" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/input_profile_Image"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:layout_below="@id/settingToolBar"
+        android:src="@drawable/profile"/>
+
+    <EditText
+        android:id="@+id/input_User_Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/input_profile_Image"
+        android:inputType="textMultiLine"
+        android:hint="username"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:padding="6dp"
+        android:layout_marginTop="20dp"
+        android:autofillHints="" />
+
+    <TextView
+        android:id="@+id/input_mobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/input_User_Name"
+        android:inputType="textMultiLine"
+        android:hint="mobile"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:padding="6dp"
+        android:layout_marginTop="10dp"
+        android:autofillHints=""/>
+
+    <TextView
+        android:id="@+id/updateSettingButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/input_mobile"
+        android:background="#18A221"
+        android:text="Update"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:textSize="25sp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:padding="6dp"
+        android:layout_marginTop="10dp"/>
+    
+    <ProgressBar
+        android:id="@+id/settingProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:outlineSpotShadowColor="@color/colorPrimary"
+        android:outlineAmbientShadowColor="@color/colorPrimary"
+        android:visibility="gone"/>
+
+</RelativeLayout>
